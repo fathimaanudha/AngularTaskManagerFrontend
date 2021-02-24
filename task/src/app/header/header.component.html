@@ -1,0 +1,19 @@
+
+<div>
+ 
+    <ul>
+        <a routerLink="" *ngIf="!_auth.loggedIn()">Home</a>
+        <a routerLink="/dashboard" *ngIf="_auth.loggedIn()">{{userDisplayName}}</a>
+        <a routerLink="signup" *ngIf="!_auth.loggedIn()">Signup</a>
+        <a routerLink="login" *ngIf="!_auth.loggedIn()">Login</a>
+       
+        <a class="right" routerLink="logout"  *ngIf="_auth.loggedIn()" (click)="logoutUser()" >Logout</a>
+        <!-- <a style="float: right;">{{userDisplayName}}</a> -->
+        
+
+
+    </ul>
+    
+ 
+     
+</div>

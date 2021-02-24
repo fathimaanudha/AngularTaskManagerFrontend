@@ -1,0 +1,48 @@
+<div class="first" *ngIf="_auth.loggedIn()">
+    <button class="btn btn-lg" id="btn" (click)="create()" [hidden]="done">CREATE NEW TASK</button>
+    <button  (click)="done1()" [hidden]="done">view completed tasks</button>
+    <button class="btn btn-sm bt" (click)="done=false" [hidden]="!done">Back</button>
+    <div [hidden]="!new">
+       
+    <form (ngSubmit)="newTask()" class="form">
+        
+        <input [(ngModel)]="taskItem.newtask" style="text-transform: capitalize;" class="textfield" name="newtask" placeholder="Enter new task ">
+      
+        <input matInput type="text"  [min]="mindate"  placeholder="Due date" [(ngModel)]="taskItem.due" name="due" onfocus="(this.type='date')" required>                     
+                   
+          <button  type="submit" [disabled]="!taskItem.newtask" >Add Task</button>
+          <button (click)='hidden()'>Cancel</button>
+    </form>
+    </div>
+    <div>
+    <ul class="list" *ngFor='let task of tasks' [hidden]="done">
+        
+        <li style="text-transform: capitalize;"> {{task.newtask}} 
+            <button id="btn1"  class="btn btn-md" style="float: right;" [routerLink]="['/task',task._id]">View</button>
+            <button id="btn2" style="float: right;" class="btn btn-md">{{task.status}}</button>
+            
+        </li> 
+    </ul>
+    <div [hidden]="!done">
+       
+        <ul class="list" *ngFor='let done of completed' [hidden]="!done"  >
+      
+            <li style="text-transform: capitalize;"> {{done.newtask}} 
+                <button id="btn1"  class="btn btn-md" style="float: right;" [routerLink]="['/task',done._id]">View</button>
+                
+                
+            </li>  
+            
+        </ul>
+    </div>
+    
+    
+    
+    
+
+   
+ </div>
+    
+
+
+</div>

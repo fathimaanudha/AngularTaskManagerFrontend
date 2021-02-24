@@ -1,0 +1,26 @@
+
+.main{
+    margin: 0;
+  width: 100%;
+  height: 80%;
+  padding: 5%;
+  
+    background-image: url(https://lh3.googleusercontent.com/proxy/Xl_Mu893cmIB_JH54FIjdz2AUX9HAKtHqPhnVoBzl12M4LDr7V6rrBP_GUc2sr9q-n4G-lQzeok6usH0ArWRljMfToDYT1s);
+}
+.body{
+    /* margin: 5%; */
+    margin-left: 10%;
+    border: 2px solid rgb(139, 131, 131);
+    border-radius: 55%;
+    height: 50vh;
+    width: 80%;
+    background-color: rgba(255, 255, 255, 0.945);
+    align-items: center;
+    align-self: center;
+    align-content: center;
+    text-align: center;
+    padding-top: 5%;
+}
+h1{
+    font-size: xx-large;
+}

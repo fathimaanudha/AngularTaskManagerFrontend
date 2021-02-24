@@ -1,0 +1,33 @@
+<div class="container" *ngIf="_auth.loggedIn()">
+    <button [routerLink]="['/dashboard']">Back</button>
+    <div class="list" [hidden]="show">
+      <h2 style="text-transform: capitalize;">Task: {{taskItem.newtask}}</h2> 
+       
+       <p>
+        Due Date: {{taskItem.due}}
+        <br>
+        <br>
+        Status:
+        <select name="status" id="" [(ngModel)]="taskItem.status"  (change)="upStatus()" value={{taskItem.status}}>
+            <option value="To do">To do</option>
+            <option value="In Progress">In Progress</option>
+            <option value="Completed">Completed</option>
+            <option value="Cancelled">Cancelled</option>
+
+        </select>
+       </p>
+       <button class="btn btn-lg" (click)="edit()">Edit</button>  <button class="btn btn-lg" (click)="delete(task)">Delete</button>
+        
+    </div>
+    <div  class="list" [hidden]="!show">
+        <form (ngSubmit)="editAll()" class="form">
+        
+            <input [(ngModel)]="taskItem.newtask" style="text-transform: capitalize;" class="textfield" name="newtask" placeholder="Enter new task ">
+          
+            <input matInput type="text"  [min]="mindate"  placeholder="Due date" [(ngModel)]="taskItem.due" name="due" onfocus="(this.type='date')" required>                     
+                       
+              <button  type="submit" [disabled]="!taskItem.newtask" >Edit Task</button>
+        </form>
+    </div>
+   
+</div>

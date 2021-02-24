@@ -1,0 +1,60 @@
+#btn{
+    margin: 2%;
+    margin-left: 40%;
+    border: 2px solid black;
+}
+.textfield{
+    width: 50%;
+  margin-top: 1%;
+    height: 8vh;
+    margin-left: 5%;
+    
+}
+.list{
+    list-style: none;
+    font-size:larger;
+    font-weight: bold;
+    border: 2px solid grey;
+    padding: 1.5%;
+    width: 50%;
+    margin: 2%;
+    margin-top: .3%;
+    margin-left: 25%;
+}
+#btn1{
+    width: 10%;
+    margin-right: auto;
+    margin-left: auto;
+   background-color: rgb(178, 178, 216);
+}
+#btn2{
+    width: 20%;
+    margin-right: 3px;
+    margin-left: auto;
+   background-color: rgb(190, 216, 178);
+   border: burlywood;
+}
+.form input{
+    height: 7vh;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.form button{
+    height: 7vh;
+    margin-left: 5px;
+    margin-right: 5px;
+    width:auto
+}
+.form{
+    border: 2px solid grey;
+    margin: 5%;
+    height: 15vh;
+    text-align: center;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+}
+.bt{
+    border: 2px solid black;
+    margin: 4%;
+}

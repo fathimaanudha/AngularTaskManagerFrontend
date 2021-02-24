@@ -1,0 +1,50 @@
+
+#page-wrap{
+  font-family: 'Princess Sofia', cursive;
+  font-size: large;
+    margin-left: 32%;
+    border: 3px solid rgb(233, 225, 225);
+    background-color:rgba(241, 241, 241, 0.781);
+   
+    width: 28vw;
+    min-height: 50vh;
+    height: auto;
+    margin-top: 5%;
+    
+  }
+  #page-wrap input{
+    padding: 2%;
+    margin-left: 6.1%;
+     width: 23vw;
+    background-color: rgb(226, 225, 225);
+    color: rgb(14, 1, 1, 169);
+    border: 2px solid rgb(255, 255, 255);
+    margin-top: 5%;
+  }
+  #page-wrap h3{
+    font-family: 'Princess Sofia', cursive;
+    font-size: xx-large;
+    text-align: center;
+    margin-top: 5%;
+  }
+  #btn1{
+    /* margin-left: 40%; */
+    margin-top: 5%;
+    margin-left: 6.5%;
+    width: 24vw;
+    height: 5vh;
+      background-color: rgb(12, 10, 8);
+      color: rgb(255, 255, 255);
+      border: 2px solid rgba(44, 44, 43, 0.918);
+  
+  }
+  #btn1:hover{
+      background-color: rgb(252, 252, 252);
+      color: rgb(0, 0, 0);
+      border: 2px solid rgba(22, 22, 22, 0.918);
+  
+  }
+.small{
+  font-size: small;
+  margin-left: 14%;
+}

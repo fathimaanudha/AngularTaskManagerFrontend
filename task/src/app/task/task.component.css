@@ -1,0 +1,21 @@
+.container{
+    text-align: center;
+    margin: 5%;
+    margin-left: 27%;
+    font-size: larger;
+}
+.list{
+    list-style: none;
+    border: 2px solid grey;
+    padding: 1.5%;
+    width: 50%;
+    margin: 2%;
+    margin-top: .3%;
+    
+}
+.btn{
+    border:2px solid salmon;
+    font-size: small;
+    width: 20%;
+    margin: 2%;
+}
